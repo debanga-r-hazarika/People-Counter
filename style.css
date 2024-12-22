@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1513682121497-80211f36a7d3?q=80&w=1976&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(31, 27, 27, 0.605);
+    width: 30%;
+    border: none;
+    border-radius: 50px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(66, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 20px 0;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    padding: 12px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#Inc-Btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#Dec-Btn {
+    background-color: #af4c4c;
+    color: white;
+}
+
+#Save-Btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#SaveData {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #FFD700;
+    max-width: 80%;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 3rem; }
+    button { padding: 10px 20px; }
+}
